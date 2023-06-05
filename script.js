@@ -3,6 +3,14 @@ function handleKeypadPress(key) {
   let displayElement = document.querySelector(".display"); // <section>
   let previousValue = displayElement.textContent; //
 
+  let plusExists = previousValue.includes("+");
+  if (plusExists && key === "+") {
+    //in JS and is written as &&/ to include more than one if conditions && can be used and executed.
+    return;
+  }
+  // example let text = "Hello world, welcome to the universe.";
+  // let result = text.includes("world");
+
   displayElement.textContent = previousValue + key; //
 
   //delete the value from display one by one when onclick event for DEL key
