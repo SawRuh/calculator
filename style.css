@@ -13,6 +13,7 @@ body {
 button {
   padding: 0;
   border: 0;
+  cursor: pointer;
 }
 
 .calculator {
@@ -21,9 +22,19 @@ button {
 .display {
   text-align: right;
   color: white;
-  padding: 10px;
+  padding: 5px;
   font-size: 40px;
   font-family: sans-serif;
+  min-height: 50px;
+}
+
+#result {
+  text-align: right;
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  font-family: sans-serif;
+  min-height: 30px;
 }
 
 .keys {

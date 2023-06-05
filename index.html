@@ -4,27 +4,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>calculator</title>
   </head>
 
   <body>
     <div class="calculator">
-      <section class="display">0</section>
+      <section class="display"></section>
+      <section id="result"></section>
       <div class="keys">
         <section class="numbers">
-          <button>7</button><button>8</button><button>9</button>
-          <button>4</button><button>5</button><button>6</button>
-          <button>1</button><button>2</button><button>3</button>
-          <button>.</button><button>0</button
-          ><button class="del-btn">DEL</button>
+          <button onclick="handleKeypadPress(7)">7</button>
+          <button onclick="handleKeypadPress(8)">8</button>
+          <button onclick="handleKeypadPress(9)">9</button>
+          <button onclick="handleKeypadPress(4)">4</button>
+          <button onclick="handleKeypadPress(5)">5</button>
+          <button onclick="handleKeypadPress(6)">6</button>
+          <button onclick="handleKeypadPress(1)">1</button>
+          <button onclick="handleKeypadPress(2)">2</button>
+          <button onclick="handleKeypadPress(3)">3</button>
+          <button onclick="handleKeypadPress('.')">.</button>
+          <button onclick="handleKeypadPress(0)">0</button>
+          <button onclick="handleKeypadPress('DEL')" class="del-btn">
+            DEL
+          </button>
         </section>
 
         <section class="factors">
-          <button>÷</button>
-          <button>×</button>
-          <button>&minus;</button>
-          <button>+</button>
-          <button class="equal-btn">=</button>
+          <button onclick="handleKeypadPress('/')">÷</button>
+          <button onclick="handleKeypadPress('*')">×</button>
+          <button onclick="handleKeypadPress('-')">&minus;</button>
+          <button onclick="handleKeypadPress('+')">+</button>
+          <button onclick="handleKeypadPress('=')" class="equal-btn">=</button>
         </section>
       </div>
     </div>
